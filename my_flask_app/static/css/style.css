@@ -1,0 +1,39 @@
+.navbar-brand {
+    width: 20vw;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto; 
+    padding: 0 15px; 
+}
+
+.first-block {
+    height: 100vh; 
+    background-image: url('../img/pexels-googledeepmind-17483874.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    display: flex; 
+    align-items: center;
+}
+
+.text-block {
+    width: 70%; 
+    color: white; 
+    padding: 40px; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
