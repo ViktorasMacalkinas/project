@@ -7,6 +7,7 @@
 2024-07-06 13:42:07,313 INFO: YourApplication startup [in /Users/viktoras/PycharmProjects/project8/my_flask_app/__init__.py:135]
 2024-07-06 13:51:43,179 INFO: YourApplication startup [in /Users/viktoras/PycharmProjects/project8/my_flask_app/__init__.py:135]
 2024-07-06 13:51:43,449 INFO: YourApplication startup [in /Users/viktoras/PycharmProjects/project8/my_flask_app/__init__.py:135]
+<<<<<<< HEAD
 2024-07-06 15:05:11,276 INFO: YourApplication startup [in /Users/viktoras/PycharmProjects/project8/my_flask_app/__init__.py:135]
 2024-07-06 15:15:27,471 INFO: YourApplication startup [in /Users/viktoras/PycharmProjects/project8/my_flask_app/__init__.py:135]
 2024-07-06 15:21:09,310 INFO: YourApplication startup [in /Users/viktoras/PycharmProjects/project8/my_flask_app/__init__.py:135]
@@ -19,3 +20,5 @@
 2024-07-06 16:19:15,592 INFO: YourApplication startup [in /Users/viktoras/PycharmProjects/project8/my_flask_app/__init__.py:135]
 2024-07-06 16:21:31,034 INFO: YourApplication startup [in /Users/viktoras/PycharmProjects/project8/my_flask_app/__init__.py:135]
 2024-07-06 16:26:28,810 INFO: YourApplication startup [in /Users/viktoras/PycharmProjects/project8/my_flask_app/__init__.py:135]
+=======
+>>>>>>> a939bd417a24cdfd3dfa5b65f1c5bb802392c6ee
