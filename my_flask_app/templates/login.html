@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meta.li</title>
+    <title>Login</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
-<body>
+<body class="login-page">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="./">Meta.li</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,7 +52,7 @@
                         <div class="row no-gutters">
                             <div class="col-md-4">
                                 <div class="dropdown-background">
-                                    <img src="/static/img/materials.jpeg" alt="Close up image of CNC machining material" class="background-image">
+                                    <img src="/static/img/materials.webp" alt="Close up image of CNC machining material" class="background-image">
                                     <div class="panel-title">
                                         <div class="title">Materials</div>
                                         <div class="subtitle">Prototypes and production parts</div>
@@ -90,7 +91,7 @@
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                <a class="dropdown-item" href="/about">About us</a>
+                                <a class="dropdown-item" href="#">About us</a>
                                 <a class="dropdown-item" href="#">Become a partner</a>
                                 <a class="dropdown-item" href="#">Contact us</a>
                                 <a class="dropdown-item" href="#">Team</a>
@@ -111,13 +112,23 @@
             </ul>
         </div>
     </nav>
-    <div class="first-block">
-        <div class="container">
-            <div class="text-block">
-                <h1>CNC industrial manufacturing, performing metalwork, allows for precise and efficient production of complex parts. Using computer numerical control, this technology ensures high accuracy and quality, which is essential in various sectors such as aviation, automotive, and electronics. Additionally, company also provide professional drafting services, helping clients create accurate designs and drawings, ensuring a smooth and precise manufacturing process.</h1>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="login-form" class="login-form" action="/login" method="post">
+            {{ form.hidden_tag() }}
+            <div class="form-group">
+                {{ form.email.label }} {{ form.email(class="form-control") }}
             </div>
-        </div>
+            <div class="form-group">
+                {{ form.password.label }} {{ form.password(class="form-control") }}
+            </div>
+            <div class="g-recaptcha" data-sitekey="{{ site_key }}"></div>
+            <div class="form-group">
+                {{ form.submit(class="custom-submit-btn") }}
+            </div>
+        </form>
     </div>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
