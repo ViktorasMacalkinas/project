@@ -1,0 +1,462 @@
+body {
+    overflow-x: hidden;
+}
+
+.navbar-brand {
+    width: auto;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+    margin-left: 50px;
+}
+
+.navbar-nav .nav-item {
+    margin-left: 15px;
+}
+
+.nav-item.dropdown {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item.dropdown .nav-link {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.first-block {
+    height: 90vh;
+    background-image: url('../img/pexels-googledeepmind-17483874.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.text-block {
+    width: 80%;
+    color: white;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.wide-dropdown {
+    width: 80vw;
+    left: -300px;
+    height: 200px;
+    right: 0;
+    padding: 1rem;
+}
+
+.wide-dropdown.comp {
+    width: 52vw;
+    left: -100px;
+    height: 200px;
+    right: 0;
+    padding: 1rem;
+}
+
+.wide-dropdown.how {
+    width: 60vw;
+    left: -200px;
+    right: 0;
+    padding: 1rem;
+}
+
+.wide-dropdown.how .row.no-gutters {
+    height: 150px;
+}
+
+.dropdown-menu .row {
+    flex-wrap: nowrap;
+}
+
+.dropdown-menu .col-md-4 {
+    padding: 1rem;
+}
+
+.dropdown-header {
+    font-size: 1.1rem;
+}
+
+.dropdown-background {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.dropdown-background .background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.dropdown-background .panel-title {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    right: 20px;
+    color: white;
+    margin-bottom: 20px;
+    z-index: 9999;
+}
+
+.panel-title .title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.panel-title .subtitle {
+    opacity: 0.7;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+#qual-link {
+    padding-left: 0;
+    font-weight: 600;
+}
+
+/* ______________________________________ */
+/*            LOGIN PAGE */
+/* ______________________________________ */
+
+body.login-page {
+    background-color: #f5f5f5;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.login-form .custom-submit-btn {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.g-recaptcha {
+    margin: 0 auto 20px auto;
+}
+
+
+/* ______________________________________ */
+/*            SIGNIN PAGE */
+/* ______________________________________ */
+
+body.signin-page {
+    background-color: #f5f5f5;
+}
+
+.signin-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.signin-container h2 {
+    margin-bottom: 20px;
+}
+
+.signin-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.signin-form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.signin-form .custom-submit-btn {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+}
+
+
+/* ______________________________________ */
+/*            ERROR 404 AND 500 PAGES */
+/* ______________________________________ */
+
+.error-container,
+.error-container-500 {
+    max-width: 600px;
+    margin: 100px auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.error-container h1 {
+    color: #dc3545;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-top: 0;
+}
+.error-container p,
+.error-container-500 p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+.error-container a
+.error-container-500 a {
+    color: #007bff;
+    text-decoration: none;
+}
+.error-container a:hover,
+.error-container-500 a:hover {
+    text-decoration: underline;
+}
+.error-container .suggestions,
+.error-container-500 .suggestions {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.error-container-500 h1 {
+    color: #000;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+
+
+/* ______________________________________ */
+/*           HOW IT WORKS PAGE */
+/* ______________________________________ */
+
+.bl1 {
+    background-color: rgb(241, 241, 241);
+}
+
+.bl1 h1 {
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.bl1 p {
+    width: 600px;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.bl2 {
+    margin-top: 100px;
+}
+
+.bl2 p {
+    margin-top: 20px;
+    width: 400px;
+}
+
+.bl3 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.bl3 .row {
+    margin-top: 80px;
+}
+
+.bl3 img {
+    width: 40px;
+}
+
+h4 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+
+/* ______________________________________ */
+/*           MATERIALS */
+/* ______________________________________ */
+
+
+.bl1-mat {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 200px;
+}
+
+.bl1-mat h1 {
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.bl1-mat .description {
+    width: 600px;
+    margin: 30px auto;
+}
+
+.bl2-mat {
+    display: flex;
+    height: 80vh;
+    margin-top: 200px;
+}
+
+.left-section {
+    background: #000;
+    width: 50%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 230px 100px;
+}
+
+.right-section {
+    width: 50%;
+    background-image: url(../img/aluminum.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.material {
+    background: #fff;
+    padding: 6px 10px;
+    width: 400px;
+    text-align: center;
+    font-weight: 600;
+    margin: 500px auto 0 auto;
+}
+
+.desc {
+    display: flex;
+    justify-content: space-between;
+}
+
+.desc p {
+    width: 400px;
+}
+
+.bl3-mat {
+    display: flex;
+}
+
+.bl3-mat h4 {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.bl3-mat .left {
+    width: 50%;
+    padding: 100px;
+    border-right: 1px solid gray;
+}
+
+.bl3-mat .right {
+    width: 50%;
+    padding: 100px;
+}
+
+.right-section-mild {
+    width: 50%;
+    background-image: url(../img/mild-steel.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.right-section-stainless {
+    width: 50%;
+    background-image: url(../img/stainless-steel.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.right-section-abs {
+    width: 50%;
+    background-image: url(../img/abs.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.right-section-nylon {
+    width: 50%;
+    background-image: url(../img/nylon.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.right-section-pom {
+    width: 50%;
+    background-image: url(../img/pom.jfif);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
